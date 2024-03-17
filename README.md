@@ -2,7 +2,7 @@
 
 This is the official code release of "Motion-to-Matching: A Mixed Paradigm for 3D Single Object Tracking"
 
-![]("https://github.com/LeoZhiheng/MTM-Tracker/blob/main/Picture/Quantitative_results.png")
+![](https://github.com/LeoZhiheng/MTM-Tracker/blob/main/Picture/Quantitative_results.png)
 
 ## Abstract
 
