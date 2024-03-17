@@ -2,9 +2,7 @@
 
 This is the official code release of "Motion-to-Matching: A Mixed Paradigm for 3D Single Object Tracking"
 
-<iframe src="https://github.com/LeoZhiheng/MTM-Tracker/blob/main/Picture/MTM-Tracker.pdf" width="100%" height="500px">
-    <embed src="https://github.com/LeoZhiheng/MTM-Tracker/blob/main/Picture/MTM-Tracker.pdf" type="application/pdf" width="100%" height="500px" />
-</iframe>
+<embed src="example.pdf" type="[application/pdf](https://github.com/LeoZhiheng/MTM-Tracker/blob/main/Picture/MTM-Tracker.pdf)" width="100%" height="600px" />
 
 ## Abstract
 
