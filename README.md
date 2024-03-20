@@ -12,5 +12,7 @@ This is the official code release of "Motion-to-Matching: A Mixed Paradigm for 3
 
 ![](https://github.com/LeoZhiheng/MTM-Tracker/blob/main/Picture/MTM-Tracker.png)
 
+## Performance
+
 ## Code
 Coming soon...
