@@ -33,3 +33,6 @@ pip install -r requirements.txt
 
 python setup.py develop
 ```
+
+### Dataset preparation
+Download the dataset from ![KITTI Tracking](https://www.cvlibs.net/datasets/kitti/eval_tracking.php) and organize the downloaded files as follows:
