@@ -35,4 +35,4 @@ python setup.py develop
 ```
 
 ### Dataset preparation
-Download the dataset from ![KITTI Tracking](https://www.cvlibs.net/datasets/kitti) and organize the downloaded files as follows:
+Download the dataset from ![KITTI Tracking](https://www.cvlibs.net/datasets/kitti/) and organize the downloaded files as follows:
