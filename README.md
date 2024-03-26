@@ -32,6 +32,10 @@ cd MTM-Tracker/
 pip install -r requirements.txt
 
 python setup.py develop
+
+cd ltr/ops/deformattn/
+python setup.py develop
+cd ../../../
 ```
 
 ### Dataset preparation
@@ -54,6 +58,6 @@ For training, you can customize the training by modifying the parameters in the 
 After configuring the yaml file, run the following command to parser the path of config file.
 
 ```
-cd MTM-Tracker/tools
+cd tools/
 bash scripts/dist_train.sh
 ```
