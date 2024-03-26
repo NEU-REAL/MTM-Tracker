@@ -59,5 +59,5 @@ After configuring the yaml file, run the following command to parser the path of
 
 ```
 cd tools/
-bash scripts/dist_train.sh
+python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher pytorch --batch_size 32 --epoch 40 --cfg_file $model_config_path --fix_random_seed --sync_bn
 ```
