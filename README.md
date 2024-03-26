@@ -38,7 +38,7 @@ python setup.py develop
 Download the dataset from [KITTI Tracking](https://www.cvlibs.net/datasets/kitti/) and organize the downloaded files as follows:
 
 ```
-lttr                                           
+MTM-Tracker                                           
 |-- data                                     
 |   |-- kitti                                                                          
 │   │   └── training
