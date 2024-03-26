@@ -62,3 +62,5 @@ cd tools/
 # python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher pytorch --batch_size 32 --epoch 40 --cfg_file cfgs/kitti/mtm-ped.yaml --fix_random_seed --sync_bn
 python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher pytorch --batch_size 32 --epoch 40 --cfg_file $model_config_path --fix_random_seed --sync_bn
 ```
+
+### Eval
