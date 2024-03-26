@@ -27,7 +27,7 @@ pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f htt
 # please refer to https://github.com/traveller59/spconv
 pip install spconv-cu113
 
-git clone https://github.com/3bobo/lttr
+git clone https://github.com/LeoZhiheng/MTM-Tracker.git
 cd lttr/
 pip install -r requirements.txt
 
