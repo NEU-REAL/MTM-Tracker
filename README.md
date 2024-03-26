@@ -55,5 +55,5 @@ After configuring the yaml file, run the following command to parser the path of
 
 ```
 cd MTM-Tracker/tools
-bash scripts/dist_train.sh $NUM_GPUs --cfg_file $model_config_path
+bash scripts/dist_train.sh
 ```
