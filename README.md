@@ -71,3 +71,15 @@ python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher 
 - Thank [traveller59](https://github.com/traveller59) for his implementation of [Spconv](https://github.com/traveller59/spconv).
 - Thank [tianweiy](https://github.com/tianweiy) for his implementation of [CenterPoint](https://github.com/tianweiy/CenterPoint).
 - Thank [3bobo](https://github.com/3bobo) for his implementation of [LTTR](https://github.com/3bobo/lttr).
+
+## Citation
+If you find the project useful for your research, you may cite,
+'''
+@article{li2023motion,
+  title={Motion-to-Matching: A Mixed Paradigm for 3D Single Object Tracking},
+  author={Li, Zhiheng and Lin, Yu and Cui, Yubo and Li, Shuo and Fang, Zheng},
+  journal={IEEE Robotics and Automation Letters},
+  year={2023},
+  publisher={IEEE}
+}
+'''
