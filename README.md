@@ -74,6 +74,7 @@ python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher 
 
 ## Citation
 If you find the project useful for your research, you may cite,
+
 '''
 @article{li2023motion,
   title={Motion-to-Matching: A Mixed Paradigm for 3D Single Object Tracking},
