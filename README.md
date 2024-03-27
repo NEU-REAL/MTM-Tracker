@@ -67,7 +67,6 @@ python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher 
 
 ```
 cd tools/
-# for single model
 python test.py --cfg_file $model_config_path --ckpt $your_saved_ckpt
 ```
 
