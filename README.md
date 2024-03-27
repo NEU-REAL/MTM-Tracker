@@ -15,7 +15,7 @@ This is the official code release of "Motion-to-Matching: A Mixed Paradigm for 3
 ## Performance
 
 ![](https://github.com/LeoZhiheng/MTM-Tracker/blob/main/Picture/Performance+.png)
-**Tip: Open source performance is tested on NVIDIA RTX 4090.** If you test on NVIDIA RTX 3090, the overall performance will also be higher than our paper.
+**Tip: Open source performance is tested on NVIDIA RTX 4090.** If you test on NVIDIA RTX 3090, the overall performance will also be higher than our paper, but slightly lower than 4090.
 
 ## Setup
 ### Install basic environment
