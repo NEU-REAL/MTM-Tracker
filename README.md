@@ -15,6 +15,7 @@ This is the official code release of "Motion-to-Matching: A Mixed Paradigm for 3
 ## Performance
 
 ![](https://github.com/LeoZhiheng/MTM-Tracker/blob/main/Picture/Performance.png)
+The pretrained model could be downloaded at this Link.
 
 ## Setup
 ### Installation
