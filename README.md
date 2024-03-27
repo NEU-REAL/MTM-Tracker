@@ -22,6 +22,7 @@ This is the official code release of "Motion-to-Matching: A Mixed Paradigm for 3
 conda create -n mtm python=3.9 -y
 conda activate mtm
 
+# please ensure that the pytorch version is correct
 pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
 
 # please refer to https://github.com/traveller59/spconv
