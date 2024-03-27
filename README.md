@@ -40,7 +40,9 @@ python setup.py develop
 ```
 cd ltr/ops/deformattn/
 python setup.py develop
-cd ../../../
+
+cd ltr/ops/points_op/
+python setup.py develop
 ```
 
 ### Dataset preparation
