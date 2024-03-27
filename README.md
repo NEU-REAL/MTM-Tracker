@@ -66,6 +66,12 @@ python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher 
 
 ### Eval
 
+```
+cd tools/
+# for single model
+python test.py --cfg_file $model_config_path --ckpt $your_saved_ckpt
+```
+
 ## Acknowledgment
 - This repo is built upon [OpenPCDet](https://github.com/open-mmlab/OpenPCDet).
 - Thank [traveller59](https://github.com/traveller59) for his implementation of [Spconv](https://github.com/traveller59/spconv).
