@@ -15,7 +15,6 @@ This is the official code release of "Motion-to-Matching: A Mixed Paradigm for 3
 ## Performance
 
 ![](https://github.com/LeoZhiheng/MTM-Tracker/blob/main/Picture/Performance.png)
-The pretrained model could be downloaded at this Link.
 
 ## Setup
 ### Installation
@@ -64,6 +63,7 @@ python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher 
 ```
 
 ### Eval
+The pretrained model could be downloaded at this Link.
 
 ```
 cd tools/
