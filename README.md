@@ -56,7 +56,7 @@ MTM-Tracker
 ### Train
 For training, you can customize the training by modifying the parameters in the yaml file of the corresponding model, such as '**CLASS_NAMES**'.
 
-After configuring the yaml file, run the following command to parser the path of config file (e.g. cfgs/kitti/mtm-ped.yaml).
+After configuring the yaml file, run the following command to parser the path of config file (e.g. **cfgs/kitti/mtm-ped.yaml**).
 
 ```
 cd tools/
@@ -67,7 +67,7 @@ python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher 
 
 ```
 cd tools/
-python test.py --cfg_file $model_config_path --ckpt $your_saved_ckpt
+python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt
 ```
 
 ## Acknowledgment
