@@ -65,3 +65,6 @@ python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher 
 ```
 
 ### Eval
+
+### Acknowledgment
+This repo is built upon [OpenPCDet](https://github.com/open-mmlab/OpenPCDet).
