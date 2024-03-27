@@ -17,7 +17,7 @@ This is the official code release of "Motion-to-Matching: A Mixed Paradigm for 3
 ![](https://github.com/LeoZhiheng/MTM-Tracker/blob/main/Picture/Performance+.png)
 
 ## Setup
-### Installation
+### Install Basic Environment
 ```
 conda create -n mtm python=3.9 -y
 conda activate mtm
@@ -32,7 +32,10 @@ cd MTM-Tracker/
 pip install -r requirements.txt
 
 python setup.py develop
+```
 
+### Install Other Library
+```
 cd ltr/ops/deformattn/
 python setup.py develop
 cd ../../../
