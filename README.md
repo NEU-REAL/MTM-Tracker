@@ -81,7 +81,7 @@ cd tools/
 # for a single model
 python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt --extra_tag base
 
-# for all saved model
+# for all saved models
 python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt --extra_tag base --eval_all
 ```
 
