@@ -85,6 +85,7 @@ python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt --eva
 - Thank [traveller59](https://github.com/traveller59) for his implementation of [Spconv](https://github.com/traveller59/spconv).
 - Thank [tianweiy](https://github.com/tianweiy) for his implementation of [CenterPoint](https://github.com/tianweiy/CenterPoint).
 - Thank [3bobo](https://github.com/3bobo) for his implementation of [LTTR](https://github.com/3bobo/lttr).
+- Thank [jiashunwang](https://github.com/jiashunwang) for his implementation of [MRT](https://github.com/jiashunwang/MRT).
 
 ## Citation
 If you find the project useful for your research, you may cite,
