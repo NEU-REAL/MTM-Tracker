@@ -66,7 +66,7 @@ After configuring the yaml file, run the following command to parser the path of
 
 ```
 cd tools/
-python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher pytorch --batch_size 32 --epoch 40 --cfg_file $model_config_path --fix_random_seed --sync_bn
+python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher pytorch --batch_size 32 --epoch 40 --cfg_file $model_config_path --fix_random_seed --sync_bn --extra_tag base
 ```
 
 ### Eval
@@ -75,9 +75,9 @@ The pretrained model could be downloaded at this Link.
 ```
 cd tools/
 # for single model
-python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt
+python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt --extra_tag base
 # for all saved model
-python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt --eval_all
+python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt --extra_tag base --eval_all
 ```
 
 ## Acknowledgment
