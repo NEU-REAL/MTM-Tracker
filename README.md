@@ -74,8 +74,10 @@ The pretrained model could be downloaded at this Link.
 
 ```
 cd tools/
+
 # for single model
 python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt --extra_tag base
+
 # for all saved model
 python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt --extra_tag base --eval_all
 ```
