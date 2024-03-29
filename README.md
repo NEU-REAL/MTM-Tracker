@@ -76,7 +76,7 @@ python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher 
 ```
 
 ### Evaluation
-The pre-trained models can be downloaded at this Link. Then, you can create a file called "model" in the root directory and put all models into it.
+The **pre-trained models** can be downloaded at this Link. Then, you can create a file called "model" in the root directory and put all models into it.
 
 ```
 cd tools/
