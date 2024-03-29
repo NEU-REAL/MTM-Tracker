@@ -59,7 +59,7 @@ MTM-Tracker
 ```
 
 ## QuickStart
-### Train
+### Training
 For training, you can customize the training by modifying the parameters in the yaml file of the corresponding model, such as '**CLASS_NAMES**'.
 
 After configuring the yaml file, run the following command to parser the path of config file (e.g. **cfgs/kitti/mtm-ped.yaml**).
@@ -75,7 +75,7 @@ python train_track.py --batch_size 32 --epoch 40 --cfg_file cfgs/kitti/mtm-ped.y
 python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher pytorch --batch_size 32 --epoch 40 --cfg_file $model_config_path --fix_random_seed --sync_bn --extra_tag base
 ```
 
-### Eval
+### Evaluation
 The pre-trained models can be downloaded at this Link. Then, you can create a file called "model" in the root directory and put all models into it.
 
 ```
