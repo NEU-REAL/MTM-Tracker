@@ -85,6 +85,8 @@ python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt --ext
 python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt --extra_tag base --eval_all
 ```
 
+To find the best model, we suggest testing the last 15 checkpoints!
+
 ## Acknowledgment
 - This repo is built upon [OpenPCDet](https://github.com/open-mmlab/OpenPCDet).
 - Thank [traveller59](https://github.com/traveller59) for his implementation of [Spconv](https://github.com/traveller59/spconv).
