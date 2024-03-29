@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 python setup.py develop
 ```
-Please ensure that the Pytorch version is consistent with ours. Different versions of Pytorch may cause performance differences.
+Please ensure that the Python version is consistent with ours, otherwise there may be performance differences.
 
 ### Install other library
 ```
