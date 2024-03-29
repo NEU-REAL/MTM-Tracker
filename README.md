@@ -74,7 +74,7 @@ python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher 
 ```
 
 ### Eval
-The pretrained model could be downloaded at this Link.
+The pretrained models could be downloaded at this Link. You can create a file called "model" in the root directory and put all models into it.
 
 ```
 cd tools/
