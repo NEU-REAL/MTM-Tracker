@@ -86,7 +86,6 @@ python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt --ext
 ```
 
 To find the best model, we suggest setting “--eval all” and testing the last 15 checkpoints.
-
 (We default to keeping the last 15 models during training.)
 
 ## Acknowledgment
