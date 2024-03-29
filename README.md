@@ -68,6 +68,8 @@ After configuring the yaml file, run the following command to parser the path of
 cd tools/
 # for a single GPU
 python train_track.py --batch_size 32 --epoch 40 --cfg_file $model_config_path --fix_random_seed --extra_tag base
+# for example
+python train_track.py --batch_size 32 --epoch 40 --cfg_file cfgs/kitti/mtm-ped.yaml --fix_random_seed --extra_tag base
 
 # for multiple GPUs
 python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher pytorch --batch_size 32 --epoch 40 --cfg_file $model_config_path --fix_random_seed --sync_bn --extra_tag base
