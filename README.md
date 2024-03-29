@@ -74,12 +74,14 @@ python -m torch.distributed.launch --nproc_per_node=2 train_track.py --launcher 
 ```
 
 ### Eval
-The pretrained models could be downloaded at this Link. You can create a file called "model" in the root directory and put all models into it.
+The pre-trained models can be downloaded at this Link. You can create a file called "model" in the root directory and put all models into it.
 
 ```
 cd tools/
 # for a single model
 python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt --extra_tag base
+# for example
+python test_track.py --cfg_file cfgs/kitti/mtm-ped.yaml --ckpt ../model/ped.pth --extra_tag base
 
 # for all saved models
 python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt --extra_tag base --eval_all
