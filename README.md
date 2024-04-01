@@ -63,7 +63,7 @@ MTM-Tracker
 ### Training
 For training, you can customize the training by modifying the parameters in the yaml file of the corresponding model, such as '**CLASS_NAMES**'.
 
-After configuring the yaml file, run the following command to parser config file and start training.
+After configuring the yaml file, run the following command to start training.
 
 ```
 cd tools/
