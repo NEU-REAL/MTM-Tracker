@@ -1,0 +1,128 @@
+CLASS_NAMES: ['Car']
+
+DATA_CONFIG: 
+    _BASE_CONFIG_: cfgs/dataset_configs/kittisot_dataset.yaml
+    SR_POINT_CLOUD_RANGE: [-3.2, -3.2, -3, 3.2, 3.2, 1]
+    TP_POINT_CLOUD_RANGE: [-3.2, -3.2, -3, 3.2, 3.2, 1]
+    OFFSET_XY_DOWN: 4
+    HISTORY_FRAME_IDS: [-1, -2, -3, -4, -5]
+    FUTHURE_FRAME_IDS: [2, 1]
+    MOTION_DOWN_RATIO: 4
+
+    DATA_PROCESSOR:
+        - NAME: shuffle_points
+          SHUFFLE_ENABLED: {
+                'train': True,
+                'test': False
+          }
+
+        - NAME: transform_points_to_voxels
+          VOXEL_SIZE: [0.025, 0.025, 0.05]
+          MAX_POINTS_PER_VOXEL: 5
+          MAX_NUMBER_OF_VOXELS: {
+            'train': 2048,
+            'test': 2048
+          }
+    MODEL_TYPE: Voxel
+
+MODEL:
+    NAME: MTM_Track
+
+    MOTION_PREDICTOR:
+        NAME: MRT_Ry
+
+    VFE:
+        NAME: MeanVFE
+
+    BACKBONE_3D:
+        NAME: VoxelBackBone8x
+
+    MAP_TO_BEV:
+        NAME: HeightCompression
+        NUM_BEV_FEATURES: 512
+
+    BACKBONE_2D:
+        NAME: BaseBEVBackboneMask
+
+        LAYER_NUMS: [3, 3, 3]
+        LAYER_STRIDES: [1, 2, 2]
+        NUM_FILTERS: [256, 256, 256]
+        UPSAMPLE_STRIDES: [1, 2, 4]
+        NUM_UPSAMPLE_FILTERS: [256, 256, 256]
+
+    NECK:
+        NAME: FeatureInteraction_MotionRefinement
+        NECK_OUTCHANNEL: 256
+        CLS_FC: [128, 128, 128, 1]
+        VOXEL_SIZE: 0.025
+        UP_RATIO: 2
+
+        DeformAttn:
+            MODEL: Vanilla
+            D_MODEL: 512
+            N_HEADS: 8
+            DIM_FEEDFORWARD: 1024
+            DROPOUT: 0.1
+            ACTIVATION: relu
+            NUM_ENCODER_LAYERS: 3
+            N_POINTS: 4
+            N_LEVELS: 3
+
+        PointXCorr:
+            MODE: PixelWise
+            KER_SIZE: [32, 32]
+            SIMI_DIME: 512
+
+    REG_HEAD:
+        NAME: CenterHead
+        MAX_NUM: 50
+        
+        ASSIGN_RADIUS: 1
+        XY_FC: [128, 128, 128, 2]
+        Z_FC: [128, 128, 128, 1]
+        RY_FC: [128, 128, 128, 2]
+        WHL_FC: [128, 128, 128, 3]
+        MT_FC: [128, 128, 128, 2]
+
+        LOSS_CONFIG:
+            RIGID_OBJECT: True
+
+            LOSS_CLS: FocalLoss
+            CLS_WEIGHTS: 1.0
+
+            LOSS_REG: L1
+            REG_WEIGHTS: [1.0, 1.0, 1.5, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+            LOSS_MT: L1
+            MT_WEIGHTS: 1.0
+            GUSS_RADIUS: 5
+
+            COR_WEIGHTS: 1.0
+
+    POST_PROCESSING:
+        FEATURE_DOWN_SAMPLE: 8
+        MOTION_DOWN_SAMPLE: 4
+        VOXEL_SIZE: [ 0.025, 0.025, 0.05 ]
+
+OPTIMIZATION:
+    MODEL_TYPE: MM
+
+    BATCH_SIZE_PER_GPU: 24
+    NUM_EPOCHS: 40
+
+    OPTIMIZER: adam_onecycle
+    LR: 0.0003
+    WEIGHT_DECAY: 0.01
+    MOMENTUM: 0.9
+
+    MOMS: [0.95, 0.85]
+    PCT_START: 0.1
+    DIV_FACTOR: 10
+    DECAY_STEP_LIST: [35, 45]
+    LR_DECAY: 0.1
+    LR_CLIP: 0.0000001
+
+    LR_WARMUP: False
+    WARMUP_EPOCH: 1
+
+    GRAD_NORM_CLIP: 10
