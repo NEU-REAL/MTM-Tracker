@@ -226,11 +226,11 @@ def train_model(model, optimizer, train_loader, val_loader, model_func, lr_sched
                 tb_log.add_scalar('meta_data/epoch_lr', cur_lr, cur_epoch)
 
             lr_scheduler.step(accumulated_iter)
-
+            '''
             val_epoch_node = 25
             if cur_epoch > val_epoch_node:
                 success, precision = val_one_epoch(model, val_loader, optim_cfg, epoch=cur_epoch, tb_log=tb_log)
-
+            '''
             #================ save trained model ================#
             trained_epoch = cur_epoch + 1
             if trained_epoch % ckpt_save_interval == 0 and rank == 0:
