@@ -37,7 +37,9 @@ python setup.py develop
 ```
 Please ensure that the Pytorch version is consistent with ours, otherwise there may be performance differences.
 
-### Install other library
+### Install other libraries
+You can find all the libraries in "ltr/ops".
+
 ```
 cd ltr/ops/deformattn/
 python setup.py develop
