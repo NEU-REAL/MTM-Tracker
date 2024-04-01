@@ -61,7 +61,7 @@ MTM-Tracker
 
 ## QuickStart
 ### Training
-For training, you can customize the training by modifying the parameters in the yaml file of the corresponding model, such as '**CLASS_NAMES**'. But we recommend using the default yaml files (e.g. cfgs/kitti/mtm-ped.yaml).
+For training, you can customize the training by modifying the parameters in the yaml file of the corresponding model, such as '**CLASS_NAMES**'. But we recommend using the default yaml files to ensure optimal performance.
 
 After configuring the yaml file, run the following command to start training.
 
