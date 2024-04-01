@@ -90,6 +90,8 @@ python test_track.py --cfg_file cfgs/kitti/mtm-ped.yaml --ckpt ../model/ped.pth 
 
 # for all saved models
 python test_track.py --cfg_file $model_config_path --ckpt $your_saved_ckpt --extra_tag base --eval_all
+# for example
+python test_track.py --cfg_file cfgs/kitti/mtm-ped.yaml --ckpt ../output/kitti/mtm-ped --extra_tag base --eval_all
 ```
 
 To find the best model, we suggest setting “--eval all” and testing the last 15 checkpoints.
