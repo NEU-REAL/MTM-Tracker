@@ -2,7 +2,7 @@
 
 This is the official code release of "Motion-to-Matching: A Mixed Paradigm for 3D Single Object Tracking"
 
-![](https://github.com/LeoZhiheng/MTM-Tracker/blob/main/Picture/Quantitative_results.png)
+![](https://github.com/LeoZhiheng/MTM-Tracker/blob/main/picture/Quantitative_results.png)
 
 ## Abstract
 
@@ -10,11 +10,11 @@ This is the official code release of "Motion-to-Matching: A Mixed Paradigm for 3
 
 ## Method
 
-![](https://github.com/LeoZhiheng/MTM-Tracker/blob/main/Picture/MTM-Tracker.png)
+![](https://github.com/LeoZhiheng/MTM-Tracker/blob/main/picture/MTM-Tracker.png)
 
 ## Performance
 
-![](https://github.com/LeoZhiheng/MTM-Tracker/blob/main/Picture/Performance_x.png)
+![](https://github.com/LeoZhiheng/MTM-Tracker/blob/main/picture/Performance_x.png)
 **Tip: Open source performance is trained and tested on NVIDIA RTX 4090.** If you test on NVIDIA RTX 3090, the overall performance will also be higher than our paper, but slightly lower than 4090.
 
 ## Setup
