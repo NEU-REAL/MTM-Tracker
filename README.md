@@ -106,14 +106,11 @@ To find the best model, we suggest setting “--eval all” and testing the last
 If you find the project useful for your research, you may cite,
 
 ```
-@ARTICLE{10292917,
-  author={Li, Zhiheng and Cui, Yubo and Lin, Yu and Fang, Zheng},
-  journal={IEEE Transactions on Intelligent Vehicles}, 
-  title={MMF-Track: Multi-Modal Multi-Level Fusion for 3D Single Object Tracking}, 
-  year={2024},
-  volume={9},
-  number={1},
-  pages={1817-1829},
-  keywords={Three-dimensional displays;Target tracking;Geometry;Point cloud compression;Feature extraction;Object tracking;Transformers;3D single object tracking (SOT);multi-modal data fusion;transformer;siamese network},
-  doi={10.1109/TIV.2023.3326790}}
+@article{li2023motion,
+  title={Motion-to-Matching: A Mixed Paradigm for 3D Single Object Tracking},
+  author={Li, Zhiheng and Lin, Yu and Cui, Yubo and Li, Shuo and Fang, Zheng},
+  journal={IEEE Robotics and Automation Letters},
+  year={2023},
+  publisher={IEEE}
+}
 ```
