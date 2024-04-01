@@ -61,7 +61,7 @@ MTM-Tracker
 
 ## QuickStart
 ### Training
-For training, you can customize the training by modifying the parameters in the yaml file of the corresponding model, such as '**CLASS_NAMES**'.
+For training, you can customize the training by modifying the parameters in the yaml file of the corresponding model, such as '**CLASS_NAMES**'. (We recommend using the default yaml files.)
 
 After configuring the yaml file, run the following command to start training.
 
